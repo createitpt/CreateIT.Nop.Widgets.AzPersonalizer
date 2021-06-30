@@ -1,8 +1,8 @@
 # CreateIT.Nop.Widgets.AzPersonalizer
 
-## nopCommerce "Reccomendations with Azure Personalizer" plugin
+## nopCommerce "Recomendations with Azure Personalizer" plugin
 
-This module allows products page to have reccomendations backed up by Azure Cognitive Services Personalizer.
+This module allows products page to have recomendations backed up by Azure Cognitive Services Personalizer.
 
 ## Features
 
