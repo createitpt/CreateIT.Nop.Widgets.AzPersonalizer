@@ -10,4 +10,4 @@ This module allows products page to have recomendations backed up by Azure Cogni
 
 nopCommerce site: [https://www.nopcommerce.com](https://www.nopcommerce.com)
 Sample Website: [https://nopazp-app-dev-staging.azurewebsites.net](https://nopazp-app-dev-staging.azurewebsites.net)
-Listing on nopCommerce "extensions and themes" catalog: (TO GET)
+Listing on nopCommerce "extensions and themes" catalog: **TO GET**
