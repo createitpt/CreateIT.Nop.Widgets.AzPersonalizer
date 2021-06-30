@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Widgets",
+  "FriendlyName": "Az Personalizer",
+  "SystemName": "Widgets.AzPersonalizer",
+  "Version": "1.41",
+  "SupportedVersions": [ "4.40" ],
+  "Author": "Frederico Metelo",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.AzPersonalizer.dll",
+  "Description": "This plugin allows you to provide reccomendations based on Azure Personalizer ML models"
+}
