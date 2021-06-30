@@ -64,7 +64,9 @@ namespace Nop.Plugin.Widgets.AzPersonalizer.Components
         {    
             var azPersonalizerSettings = await _settingService.LoadSettingAsync<AzPersonalizerSettings>((await _storeContext.GetCurrentStoreAsync()).Id);
             if (widgetZone.Equals(PublicWidgetZones.ProductDetailsEssentialBottom))
-            {
+            { 
+                try
+                {
                 string[] url = (_webHelper.GetThisPageUrl(true))?.Split("?");
                 if (TempData["RewardID"] != null
                     && TempData["OrderedIDs"] != null
@@ -74,9 +76,20 @@ namespace Nop.Plugin.Widgets.AzPersonalizer.Components
                     string pos = TempData["OrderedIDs"] is string position ? position : null;
                     
                     await ProcessRewardAsync(id, pos, additionalData);
-                }      
-                return await ReccomendedList(azPersonalizerSettings, additionalData);
-
+                }
+               
+                    var list = await ReccomendedList(azPersonalizerSettings, additionalData);
+                    if(list == null)
+                    {
+                        await _logger.ErrorAsync("Confirm everything is corret in the plugin settings.");
+                        return View("~/Plugins/Widgets.AzPersonalizer/Views/Default.cshtml");
+                    }
+                    return list;
+                }catch(Exception e)
+                {
+                    await _logger.ErrorAsync(e.Message);
+                    return View("~/Plugins/Widgets.AzPersonalizer/Views/Default.cshtml");
+                }
             }
             else
             {
@@ -122,7 +135,7 @@ namespace Nop.Plugin.Widgets.AzPersonalizer.Components
             }catch(Exception e)
             {
                 await _logger.ErrorAsync("Failed to get reccomendations");
-                return View();
+                return null;
             }
             
         }

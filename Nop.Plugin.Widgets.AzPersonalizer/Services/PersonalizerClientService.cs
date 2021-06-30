@@ -117,7 +117,8 @@ namespace Nop.Plugin.Widgets.AzPersonalizer.Services
         private async Task SetClientAsync()
         {
             _azPersonalizerSettings = await _settingService.LoadSettingAsync<AzPersonalizerSettings>((await _storeContext.GetCurrentStoreAsync()).Id);
-            
+            if (string.IsNullOrEmpty(_azPersonalizerSettings.APIkey.Trim()) || string.IsNullOrEmpty(_azPersonalizerSettings.Endpoint.Trim()))
+                throw new Exception("Plugin Not Configured.");
             _client = new PersonalizerClient(
                                 new ApiKeyServiceClientCredentials(_azPersonalizerSettings.APIkey))
                                 { 

@@ -21,6 +21,7 @@
     <None Remove="logo.png" />
     <None Remove="plugin.json" />
     <None Remove="Views\Configure.cshtml" />
+    <None Remove="Views\Default.cshtml" />
     <None Remove="Views\Reccomendations.cshtml" />
     <None Remove="Views\_ProductReccomendationBox.cshtml" />
     <None Remove="Views\_ViewImports.cshtml" />
@@ -35,6 +36,11 @@
     </Content>
     <Content Include="Views\Configure.cshtml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\Default.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
     <Content Include="Views\_ProductReccomendationBox.cshtml">
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>

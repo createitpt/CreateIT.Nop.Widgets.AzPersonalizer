@@ -8,6 +8,7 @@ C:\Users\chama\source\repos\CRT.NopML\src\Presentation\Nop.Web\Plugins\Widgets.A
 C:\Users\chama\source\repos\CRT.NopML\src\Presentation\Nop.Web\Plugins\Widgets.AzPersonalizer\logo.png
 C:\Users\chama\source\repos\CRT.NopML\src\Presentation\Nop.Web\Plugins\Widgets.AzPersonalizer\plugin.json
 C:\Users\chama\source\repos\CRT.NopML\src\Presentation\Nop.Web\Plugins\Widgets.AzPersonalizer\Views\Configure.cshtml
+C:\Users\chama\source\repos\CRT.NopML\src\Presentation\Nop.Web\Plugins\Widgets.AzPersonalizer\Views\Default.cshtml
 C:\Users\chama\source\repos\CRT.NopML\src\Presentation\Nop.Web\Plugins\Widgets.AzPersonalizer\Views\_ProductReccomendationBox.cshtml
 C:\Users\chama\source\repos\CRT.NopML\src\Presentation\Nop.Web\Plugins\Widgets.AzPersonalizer\Views\Reccomendations.cshtml
 C:\Users\chama\source\repos\CRT.NopML\src\Presentation\Nop.Web\Plugins\Widgets.AzPersonalizer\Views\_ViewImports.cshtml
