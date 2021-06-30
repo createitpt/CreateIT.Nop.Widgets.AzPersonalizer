@@ -9,5 +9,5 @@ This module allows products page to have recomendations backed up by Azure Cogni
 *Adds a list of recommended products to all the product pages.
 
 nopCommerce site: [https://www.nopcommerce.com](https://www.nopcommerce.com)
-
-Listing on nopCommerce "extensions and themes" catalog: [https://www.nopcommerce.com/pay-in-store-payment-module](https://www.nopcommerce.com/pay-in-store-payment-module)
+Sample Website: [https://nopazp-app-dev-staging.azurewebsites.net](https://nopazp-app-dev-staging.azurewebsites.net)
+Listing on nopCommerce "extensions and themes" catalog: (TO GET)
