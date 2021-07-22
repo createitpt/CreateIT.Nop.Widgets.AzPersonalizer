@@ -1,0 +1,31 @@
+﻿@using Nop.Plugin.Widgets.AzPersonalizer.Models
+@model Nop.Plugin.Widgets.AzPersonalizer.Models.ProductOverviewToRankingList
+<style>
+	#wrapper-class {
+	}
+</style>
+
+@if (Model.ProductOverviewList.Count > 0)
+{
+	<div class="related-products-grid product-grid">
+		<div class="title">
+			<strong>Recommended Products:</strong>
+		</div>
+		<div class="item-grid wrapper-class">
+			@{
+				int i = 0;
+
+			}
+			@foreach (var item in Model.ProductOverviewList)
+			{
+				{
+					if (i > 3) break;
+					int thisIteration = i++;
+					<div class="item-box">
+						@await Html.PartialAsync("~/Plugins/Widgets.AzPersonalizer/Views/_ProductRecommendationBox.cshtml", new ProductOverviewRecommendation(item, Model.RankingID, thisIteration))
+					</div>
+				}
+			}
+		</div>
+	</div>
+}
